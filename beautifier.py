@@ -1,4 +1,4 @@
-import commands
+import commands, os
 import jsbeautifier
 import sublime, sublime_plugin
 
@@ -10,13 +10,14 @@ class BeautifierCommand(sublime_plugin.TextCommand):
             PHP_OPTIONS = "-s4 --filters \'ArrayNested() DocBlock() NewLines(before=switch:while:T_COMMENT:for:foreach:T_CLASS:return:break,after=T_COMMENT:protected:private)\' "
             selection = self.view.sel()[0]
             replaceRegion = selection if len(selection) > 0 else sublime.Region(0, self.view.size())
-            f = open('/tmp/asdf', 'w')
+            f = open(FILE + "~", 'w')
             f.write(self.view.substr(replaceRegion))
             f.close()
-            cmd = "php_beautifier " + PHP_OPTIONS + "--input /tmp/asdf --output -"
+            cmd = "php_beautifier " + PHP_OPTIONS + "--input " + FILE + "~ --output -"
             print __name__ + ' ' + cmd
             res = commands.getoutput(cmd)
-            resu = unicode( res, "utf-8" )
+            resu = unicode(res, "utf-8" )
+            os.remove(FILE + "~")
             self.view.replace(edit, replaceRegion, resu)
         if FILE[-3:] == '.js':
             print __name__ + 'Calling jsbeautifier'
