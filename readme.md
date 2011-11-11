@@ -15,8 +15,12 @@ Install php beautifier from pear channel :
 Clone or download the files and copy them to your `Packages` folder. You can access it via Preferences -> Browse Packages in sublime text.
 
 ## Usage
-`ctrl + shift + p` and type `Format: Javascript/PHP`
-`ctrl + alt + f`
+ * `ctrl + shift + p` and type `Format: Javascript/PHP`
+ * `ctrl + alt + f`
 
 ## Customize
 Check the Beautifier.sublime-settings for available options
+
+## TODO
+ * - Implement php_before_* / php_after_* options
+ * - Find an alternative to php_beautifier pear install
