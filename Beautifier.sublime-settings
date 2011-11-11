@@ -1,0 +1,27 @@
+{
+	"php_ArrayNested": false,
+	"php_DocBlock": true,
+	"php_NewLines": true,
+
+	"php_before_switch": true,
+	"php_before_while": true,
+	"php_before_T_COMMENT": true,
+	"php_before_for": true,
+	"php_before_foreach": true,
+	"php_before_T_CLASS": true,
+	"php_before_return": true,
+	"php_before_break": true,
+
+	"php_after_T_COMMENT": true,
+	"php_after_proctected": true,
+	"php_after_private": true,
+
+
+	//"js_indent_size": 4, TAKEN FROM THE CURRENT VIEW SETTINGS
+	//"js_indent_char": " ", TAKEN FROM THE CURRENT VIEW SETTINGS
+	"js_preserve_newlines": true,
+	"js_max_preserve_newlines": 10,
+	"js_jslint_happy": false,
+	"js_brace_style": "collapse", // [collapse, expand, end-expand]
+	"js_keep_array_indentation": false
+}
