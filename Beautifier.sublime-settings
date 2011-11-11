@@ -3,6 +3,7 @@
 	"php_DocBlock": true,
 	"php_NewLines": true,
 
+	// To be inegrated!
 	"php_before_switch": true,
 	"php_before_while": true,
 	"php_before_T_COMMENT": true,
