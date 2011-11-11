@@ -6,11 +6,11 @@ To install it I would recommend using the great Package Control plugin (https://
 
 ## Installation
 Install php-pear and php-cli with your package manager :
- * php-pear & php5-cli with Debian
- * php-pear & php with Archlinux
+
+ * `apt-get install php-pear php5-cli` (Debian / Ubuntu)
 
 Install php beautifier from pear channel :
-`sudo pear install --alldeps  channel://pear.php.net/php_beautifier-0.1.15`
+ * `sudo pear install --alldeps  channel://pear.php.net/php_beautifier-0.1.15`
 
 Clone or download the files and copy them to your `Packages` folder. You can access it via Preferences -> Browse Packages in sublime text.
 
@@ -22,5 +22,5 @@ Clone or download the files and copy them to your `Packages` folder. You can acc
 Check the Beautifier.sublime-settings for available options
 
 ## TODO
- * - Implement php_before_* / php_after_* options
- * - Find an alternative to php_beautifier pear install
+ * Implement php_before_* / php_after_* options
+ * Find an alternative to php_beautifier pear install
