@@ -4,6 +4,8 @@ Both were interesting to me, but their key bindings being the same, they were th
 
 To install it I would recommend using the great Package Control plugin (https://github.com/wbond/sublime_package_control) and add this repository to your personal list of repositories. Maybe one day it will make it to the "official" package control channel! :)
 
+**NOTE** : only tested on Ubuntu
+
 ## Installation
 Install php-pear and php-cli with your package manager :
 
@@ -22,5 +24,5 @@ Clone or download the files and copy them to your `Packages` folder. You can acc
 Check the Beautifier.sublime-settings for available options
 
 ## TODO
- * Implement php_before_* / php_after_* options
+ * Implement `php_before_*` / `php_after_*` options
  * Find an alternative to php_beautifier pear install
