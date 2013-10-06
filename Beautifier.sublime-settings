@@ -1,28 +1,67 @@
 {
-	"php_ArrayNested": false,
-	"php_DocBlock": true,
-	"php_NewLines": true,
+	"prompt_on_ambiguous_buffer" : true,
 
-	// To be inegrated!
-	"php_before_switch": true,
-	"php_before_while": true,
-	"php_before_T_COMMENT": true,
-	"php_before_for": true,
-	"php_before_foreach": true,
-	"php_before_T_CLASS": true,
-	"php_before_return": true,
-	"php_before_break": true,
+	"prompt_on_error" : false,
 
-	"php_after_T_COMMENT": true,
-	"php_after_proctected": true,
-	"php_after_private": true,
+	"file_types" : {
+		"js" : [".js"],
+		"php" : [".php"]
+		},
 
-
-	//"js_indent_size": 4, TAKEN FROM THE CURRENT VIEW SETTINGS
-	//"js_indent_char": " ", TAKEN FROM THE CURRENT VIEW SETTINGS
-	"js_preserve_newlines": true,
-	"js_max_preserve_newlines": 10,
-	"js_jslint_happy": false,
-	"js_brace_style": "collapse", // [collapse, expand, end-expand]
-	"js_keep_array_indentation": false
+	"formatting" : {
+		"php" : {
+			"ArrayNested" : false,
+			"DocBlock" : false,
+			"Pear" : false,
+			"phpBB" : false,
+			"default" : false,
+			"IndentStyles" : "k&r", //[k&r, allman, whitesmiths, gnu]
+			"indentation" : {
+				"detect_sublime_settings" : true,
+				"indent_type" : "spaces", //[spaces, tabs]
+				"indent_amount" : 2
+			},
+			"NewLines" : {
+				"enabled" : true,
+				"before" : {
+					"switch" : true,
+					"while" : true,
+					"T_COMMENT" : true,
+					"for" : true,
+					"foreach" : true,
+					"T_CLASS" : true,
+					"break"  : true,
+					"protected" : true,
+					"private" : true,
+					"public" : true,
+					"return" : true
+				},
+				"after" :{
+					"switch" : false,
+					"while" : false,
+					"T_COMMENT" : true,
+					"for" : false,
+					"foreach" : false,
+					"T_CLASS" : false,
+					"break" : false,
+					"protected" : false,
+					"private" : false,
+					"public" : false,
+					"return" : true
+				}
+			}
+		},
+		"js" : {
+			"preserve_newlines" : true,
+			"max_preserve_newlines" : 10,
+			"jslint_happy" : false,
+			"brace_style" : "collapse", // [collapse, expand, end-expand]
+			"keep_array_indentation" : false,
+			"indentation" : {
+				"detect_sublime_settings" : true,
+				"indent_type" : "spaces", // [spaces. tabs]
+				"indent_amount" : 2
+			}
+		}
+	}
 }
