@@ -76,7 +76,7 @@ class BeautifierCommand(sublime_plugin.TextCommand):
         if formatting.get("ArrayNested", False) == True:
             filters.append("ArrayNested()")
         if formatting.get("DocBlock", False) == True:
-            filters.append("DockBlock()")
+            filters.append("DocBlock()")
         if formatting.get("Pear", False) == True:
             filters.append("Pear(add-header=False)")
         if formatting.get("phpBB", False) == True:
