@@ -21,8 +21,7 @@ Clone or download the files and copy them to your `Packages` folder. You can acc
  * `ctrl + alt + f`
 
 ## Customize
-Check the Beautifier.sublime-settings for available options
+Various plugin and formatting options can be configured via the settings file, available via `Preferences > Package Settings > Beautifier > Settings - User`.
 
 ## TODO
- * Implement `php_before_*` / `php_after_*` options
  * Find an alternative to php_beautifier pear install
